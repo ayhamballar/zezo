@@ -1,0 +1,173 @@
+body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }
+.words{
+    font-size: 36px;
+      color: #303030;
+      font-weight: 600;
+       padding: 10px;
+      visibility: hidden;
+}
+  #zezo {
+      font-size: 95px;
+      text-transform: uppercase;
+      color: #7AE195;
+      font-weight: 900;
+      letter-spacing: 20px;
+      text-shadow: 0px 10px #252624;
+
+  }
+.log-xs{
+      color: #303030;
+      font-size: 25px;
+      margin: 8px;
+      visibility: hidden;
+      
+}
+
+  .jumbotron {
+      background-color: transparent;
+      color: #fff;
+      padding: 120px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #464646;
+      border: 0;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+      opacity: 0.92;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+      font-weight: bold;
+  }
+  .navbar-nav li a:hover {
+      color: red !important;
+      background-color: #fff !important;
+  }
+
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+
+  }
+  video{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: -100;
+  }
+  div.vid{
+    overflow: auto;
+    height: 900px;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+
+
+.head-effect {
+      animation-name: head;
+      animation-duration: 2s;
+      visibility: visible;
+  }
+  @keyframes head {
+    0% {
+      opacity: 0;
+      transform: translateY(100%) ;
+      color: #303030;
+
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+      color: #303030;
+    }
+  }
+
+.zezo-hide{visibility: hidden;}
+.zezo-effect {
+      visibility: visible;
+      animation-name: zezo;
+      animation-duration: 2.5s;
+      animation-timing-function: linear ;
+  }
+  @keyframes zezo {
+    0% {
+        opacity: 0;
+       letter-spacing:-75px;
+      text-shadow: -500px 500px #FF0018;
+       transform: rotateX(150deg);
+
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
