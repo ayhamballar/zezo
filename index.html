@@ -5,10 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/animate.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/start.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/social-network.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://use.fontawesome.com/25f835238a.js"></script>
+  <script src="./js/add_effects.js"></script>
   <script src="./js/effects.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -20,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -35,37 +41,74 @@
   </div>
 </nav>
 
-<div class="vid jumbotron text-center col-sm-12">
-<h1 id="zezo" class="zezo-hide">Zezo</h1> 
- <span class="eff-1 words">Listen</span><span class="glyphicon glyphicon-arrow-right log-xs eff-2"></span> <span class="eff-3 words">Read</span><span class="glyphicon glyphicon-arrow-right log-xs eff-4"></span><span class="eff-5 words">Improve</span><span style="color: #2E42FF; font-size: 75px; margin-left: 15px; transform: rotate(-25deg); position: relative; z-index: 1" class="glyphicon glyphicon-thumbs-up log-xs eff-6"></span>
+<div class="jumbotron text-center">
+<h1 id="zezo">Zezo</h1> 
+ <h3 class="intro1">Listen</h3><span class="glyphicon glyphicon-arrow-right log-xs intro2"></span> <h3 class="intro3">Read</h3><span class="glyphicon glyphicon-arrow-right log-xs intro4"></span><h3 class="intro5">Improve</h3><div style="transform: rotate(-25deg); display: inline-block;" id="flash"><span style="color: #257862; font-size: 75px; margin-left: 15px;" class="glyphicon glyphicon-thumbs-up log-xs intro6 "></span></div>
+
+<div class="row">
+  <div class="col-sm-12">
+  <div class="row">
+  <div class="col-sm-4 col-xs-4">
+    <div class="thumbnail">
+      <img src="./photos/english-photo.png" title="English" alt="English">
+      <div class="caption">
+     <a href="#"> <h3>English</h3></a>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-sm-4 col-xs-4">
+    <div class="thumbnail">
+      <img src="./photos/nederlands-photo.jpg" title="Nederlands" alt="Nederlands">
+    <div class="caption">
+      <a href="#"><h3>Nederlands</h3></a>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4 col-xs-4">
+    <div class="thumbnail">
+      <img src="./photos/arabic-photo.jpg" title="Arabic" alt="Arabic">
+      <div class="caption">
+      <a href="#"><h3>Arabic</h3></a>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+
 
  <video autoplay loop>
  	<source src="vid1.mp4" type="video/mp4">
  </video>
-
 </div>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+
+<div id="about" class="container-fluid bg-body">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <div class="col-sm-8 ">
+      <h2>About Zezo App</h2><br>
+      <div class="slideanim txt-color">
+      <h3 style="line-height: 35px;">Zezo is a Web application to help reading problems in all languages of the world (or mostly)
+      Using this application you can write a text in which owns the problem of reading and Zezo is reading the text you word for word as fast as you specify
+      While continuing to using the application will improve your reading of the language you are working on
+      Where you can then test in reading by Zezo too! And discover your mistakes to improve reading.
+      Do not forget to apply Zezo has put voice commands, where it becomes fully responsive voice commands and use the application without the need for a mouse</h3>
+      </div>
       <br><a href="#contact"><button class="btn btn-default btn-lg">Get in Touch</button></a>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 logoanim">
       <span class="glyphicon glyphicon-info-sign logo"></span>
     </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center bg-grey">
+<div id="services" class="container-fluid text-center bg-body">
   <h2>SERVICES</h2>
   <h4>What Zezo offer to you </h4>
   <br>
-  <div class="row slideanim">
+  <div class="row tadaanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-volume-up logo-small"></span>
       <h4>READ</h4>
@@ -83,7 +126,7 @@
     </div>
   </div>
   <br><br>
-  <div class="row slideanim">
+  <div class="row tadaanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-record logo-small"></span>
       <h4>LISTEN</h4>
@@ -103,62 +146,184 @@
     <br>
       <span class="glyphicon glyphicon-flash logo-small"></span>
       <h4>RESPONSE</h4>
-      <p>" Hey Zezo " Just say it and then talk with zezo to use the site you without mouse!</p>
+      <p>" Hey Zezo " Just say it and then talk with zezo to use the site without mouse!</p>
     </div>
   </div>
 </div>
 
 <!-- Container (How To Use) -->
-<div id="show" class="container-fluid">
+<div id="show" class="container-fluid bg-body">
   <div class="row">
     <div class="col-sm-4">
-      <span class="glyphicon glyphicon-question-sign logo slideanim"></span>
+      <span class="glyphicon glyphicon-cog logo logoanim" style="margin-left: 0px;"></span>
     </div>
     <div class="col-sm-8">
       <h2>How To Use</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <div class="slideanim  txt-color">
+     <h3 style="line-height: 35px;"> --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+      </div>
     </div>
   </div>
 </div>
 
 
 <!-- Container (Start Section) -->
-<div id="start" class="container-fluid text-center bg-grey">
-  <h2>Start!</h2><br>
-  
-  
+<div id="start" class="container-fluid text-center bg-body">
+<h2>Start!</h2><br>
+<div class="row">
+<div class="col-sm-4">
+<div class="input-group form-group ">
+ <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+<select class="btn btn-default btn-lg btn-block no-radius" name="languages" id="languages">
+      <option selected disabled>Languages</option>
+      <option>English</option>
+      <option>French</option>
+      <option>Nederlands</option>
+      <option>German</option>
+      <option>Arabic</option>
+  </select>
+</div>
+<div class="input-group form-group">
+ <span class="input-group-addon"><i class="glyphicon glyphicon-open"></i></span>
+<button class="btn btn-warning btn-file btn-lg btn-block no-radius start_buttons" id="file">
+    Upload a Text File... <span class="glyphicon glyphicon-ok ok-logo"> </span><input type="file">
+</button>
+</div>
+<div class="input-group form-group">
+ <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+<button class="btn btn-danger btn-lg btn-block no-radius start_buttons" id="write"> Test Now!</button>
+</div>
+<div class="input-group form-group">
+ <span class="input-group-addon"><i class="glyphicon glyphicon-remove"></i></span>
+<button class="btn btn-success btn-lg btn-block no-radius start_buttons" id="write"> Reset</button>
+</div>
+<button class="btn btn-primary btn-block btn-lg start_buttons" style="padding: 30px; font-weight: bold;" id="read">Read</button>
+</div>
+
+<div clss="col-sm-8">
+<div>
+<textarea class="form-control" id="textarea" placeholder="You Can Write Here ..."></textarea><br>
+
+<!--Tools for Font -->
+<div class="tools-group">
+<label>Font Type :</label>
+<select class="tools-font" name="font_list" id="font_list" style="font-family: 'Merienda'" title="Font">
+      <option style="font-family:'Indie Flower'">Indie Flower</option>
+      <option style="font-family: 'Raleway'">Raleway</option>
+      <option style="font-family: 'Kalam'">Kalam</option>
+      <option style="font-family: 'Fresca'">Fresca</option>
+      <option style="font-family: 'Chivo'">Chivo</option>
+      <option style="font-family: 'Merienda'" selected>Merienda</option>
+  </select>
+<label>Marker Color :</label>
+<input class="tools-font" type="color" name="color" value="#EBFF00">
+<label>Font Size :</label>
+<input class="tools-font" type="number" id="font_size" min="14" max="50" value="14">
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header bg-danger">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h3 class="modal-title black-text" style="color:#484846"> Listen To Zezo <span class="glyphicon glyphicon-volume-up
+"></span></h3>
+        </div>
+        <div class="modal-body"><br>
+          <p class="black-text bg-info" style="border-radius: 60px; box-shadow: 0px 0px 15px #FF0707;">You Control Font size , Speed , Stop and Start By The Elements At the Bottom.</p><br>
+
+          <div class="bar"><span class="text"></span></div><br>
+
+          <div class="form-group buttons">
+            <button class="btn btn-warning btn-md " id="faster"><span class="glyphicon glyphicon-backward"></span> Faster</button>
+            <button class="btn btn-warning btn-md " id="slower">Solwer <span class="glyphicon glyphicon-forward"></span></button>
+            <button class="btn btn-danger btn-md " id="stop">Stop <span class="glyphicon glyphicon-stop"></span></button>
+            <label>Font Size :</label>
+            <input class="form-control btn-default" type="number" id="font_size" min="14" max="50" value="14">
+          </div>
+
+          <!--meaning-->
+          <div class="row">
+          <div class="col-sm-12">
+           <button class="btn btn-success btn-lg btn-block" style="float: right;" data-toggle="collapse" data-target="#demo">Meaning <span class="glyphicon glyphicon-search"></span></button>
+           </div>
+            <div id="demo" class="collapse">
+              <div class="col-sm-12"><br>
+              <div class="panel panel-primary">
+                 <div class="panel-heading"><i class="fa fa-wikipedia-w"></i> Wikipedia</div>
+                 <div class="panel-body">
+                 <div class="row">
+                 <div class="col-sm-10">
+                 <div class="input-group">
+                    <span class="input-group-addon">Word</span>
+                    <input id="msg" type="text" class="form-control" name="msg" placeholder="Write Here Please..">
+                 </div>
+                 </div>
+                 <div class="col-sm-2">
+                 <button class="btn btn-info btn-md btn-block" style="color: black;font-size: 19px;"><span class="fa fa-eye"></span></button>
+                 </div>
+                 </div>
+                 </div>
+               </div>
+              </div>
+            </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 
 
+
+</div>
+
+
 <!-- Container (Test Section) -->
-<div id="test" class="container-fluid">
+<div id="test" class="container-fluid bg-body">
   <div class="text-center">
     <h2>Testing</h2>
-    <h4>Choose a payment plan that works for you</h4>
+   
   </div>
 
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid bg-body">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+      <p>Contact me and I'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> 9000 Ghent , BE</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +32 466 06 10 50</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> ayhambellar@gmail.com</p>
     </div>
   </div>
 </div>
 
-<footer class="container-fluid text-center">
+<footer class="container-fluid text-center bg-body">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+
+
+<div class="row">
+    <div class="col-md-12">
+      <ul class="social-network social-circle">
+        <li><a href="https://www.facebook.com/ayham.ballar.18" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-2x fa-facebook"></i></a></li>
+        <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-2x fa-twitter"></i></a></li>
+      </ul>       
+    </div>
+</div>
+
 </footer>
 
 </body>
